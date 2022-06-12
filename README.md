@@ -10,9 +10,40 @@
 
 
 Creating conda env
-
+```
 conda create -p venv python=3.7 -y 
+```
+```
 conda activate venv/
+```
 
-
+```
 pip install -r requirements.txt
+```
+
+BUILD DOcker IMAGE
+```
+docker build -t <image_name>:<tagname>
+```
+>image name for docker image must be lowercase
+
+TO list docker images
+```
+docker images
+```
+
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 <image_id>
+```
+
+To check running container in docker 
+```
+docker ps
+```
+
+To stop docker container
+```
+docker stop <container_id>
+```
+
