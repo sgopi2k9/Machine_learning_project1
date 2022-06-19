@@ -1,4 +1,6 @@
 from flask import Flask
+from housing.logger import logging
+
 app = Flask(__name__)
 
 @app.route("/",methods=['GET','POST'])

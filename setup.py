@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 from typing import List
 
 
@@ -11,7 +11,7 @@ def get_requirements_list()->List[str]:
     of libraries mentioned in requirement.txt file 
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        requirement_file.readlines() 
+        requirement_file.readlines().remove("-e .") 
 
 
 #Declaring variables for setup function
@@ -28,7 +28,7 @@ setup(
     version = VERSION,
     author = AUTHOR,
     description = DESCRIPTION,
-    packages = PACKAGES,
+    packages = find_packages(), #PACKAGES,#This will check files under housing->__init__ and install packages
     install_requires = get_requirements_list()
 
 
