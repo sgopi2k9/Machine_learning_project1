@@ -58,5 +58,10 @@ To install and use jupyter notebook in vscode
 pip install ipykernel
 ```
 
+To use yaml file
+```
+pip install pyYAML
+```
+
 
 
