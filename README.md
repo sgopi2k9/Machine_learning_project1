@@ -52,3 +52,11 @@ docker stop <container_id>
 python setup.py install
 ```
 
+
+To install and use jupyter notebook in vscode
+```
+pip install ipykernel
+```
+
+
+
