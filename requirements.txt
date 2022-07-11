@@ -5,4 +5,5 @@ numpy
 pandas
 pyYAML
 six
+evidently
 -e .
